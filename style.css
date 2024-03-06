@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: slategray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+header {
+    color: darkgreen;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle {
+    margin-top: 2rem;
+    color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn {
+    margin: 0 1rem;
+}
+
+.checkbox {
+    display: none;
+}
+
+.sub {
+    background: linear-gradient(135deg,
+
+            rgb(85, 190, 176)0%,
+            rgba(105, 111, 221, 1)100%);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20px;
+    width: 40px;
+    border-radius: 15px;
+    padding: 2px;
+
+}
+
+.circle {
+    background-color: chartreuse;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+
+}
+
+.checkbox:checked+.sub {
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.cards {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    background-color: plum;
+    color: seagreen;
+    border-radius: 40px;
+}
+
+.cards .card.active {
+    background: linear-gradient(135deg,
+            rgb(23, 25, 148)0% rgb(237, 163, 14)100%);
+    color: black;
+    display: flex;
+
+    align-items: center;
+    transform: scale(1.1);
+    z-index: 1;
+
+
+}
+
+ul {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+ul li.price {
+    font-size: 10px;
+    color: slategray;
+    padding-bottom: 10px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 15px 2px rgba(105, 111, 221, 1);
+}
+
+.card.active .price {
+    color: yellowgreen;
+}
+
+
+.btn {
+
+    margin-top: 10px;
+    height: 40px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: linear-gradient(135deg, rgb(65, 76, 12)0%, rgb(104, 57, 190)100%);
+    color: black;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+
+
+.active-btn {
+    background-color: tomato;
+    height: 30px;
+    width: 80px;
+}
+
+.bottom-bar {
+    border-bottom: 2px solid hotpink;
+    font-size: x-large;
+}
+
+.card.active .bottom-bar {
+    border-bottom: 2px solid hotpink;
+}
+
+
+
+.pack {
+    font-size: xx-large;
+}
